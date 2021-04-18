@@ -12,7 +12,7 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
@@ -21,15 +21,15 @@
     <div class="mikaWeatherApp">
       <form>
         <div class="row">
-          <div class="col-8">
+          <div class="col-9">
             <input
               type="search"
-              class="form-control search-input mb-3"
+              class="form-control search-input weatherSearch"
               placeholder="Enter a city..."
             />
           </div>
-          <div class="col-4">
-            <input type="submit" class="btn btn-primary mb-3" value="search" />
+          <div class="col-3">
+            <input type="submit" class="btn btn-primary w-100" value="Search" />
           </div>
         </div>
       </form>
@@ -37,30 +37,27 @@
       <div class="row">
         <div class="col-6">
           <h1>Philadelphia</h1>
+          <ul>
+            <li>Sunday 11.05,</li>
+            <li>Scattered Clouds</li>
+          </ul>
+          <ul>
+            <li>Humidity: <strong class="tempInfo">51%</strong> ,</li>
+            <li>Wind: <strong class="tempInfo">5km/h</strong></li>
+          </ul>
         </div>
         <div class="col-6">
           <h2>☀️ 15°C</h2>
         </div>
       </div>
-      <div class="row">
-        <ul>
-          <li>Sunday 11.05,</li>
-          <li>Scattered Clouds</li>
-        </ul>
-      </div>
-      <div class="row">
-        <ul>
-          <li>Humidity: %51,</li>
-          <li>Wind: 5km/h</li>
-        </ul>
-      </div>
 
-      <p>
-        This project was coded by Mika and is open-sourced on
-        <a href="https://github.com/mkanno24/WeatherApp_Mika">GitHub</a> and
+      <footer>
+        This project was coded by
+        <a href="https://github.com/mkanno24">mkanno24 </a>and is open-sourced
+        on <a href="https://github.com/mkanno24/WeatherApp_Mika">GitHub</a> and
         hosted on
         <a href="https://vigorous-almeida-57862d.netlify.app/">Netlify</a>
-      </p>
+      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>

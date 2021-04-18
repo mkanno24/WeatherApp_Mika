@@ -1,23 +1,57 @@
 body {
   background: #f4eee8;
+  text-align: left;
+  font-family: "Lato", sans-serif;
 }
 ul {
   list-style-type: none;
 }
 li {
   display: inline;
+  color: #114e60;
+  font-size: 18px;
+}
+
+.tempInfo {
+  font-weight: 800;
+  color: black;
 }
 
 h1,
 h2 {
-  padding: 10px;
+  padding: 30px;
+  font-weight: bold;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+a {
+  color: #325288;
+}
+a:hover {
+  color: #114e60;
+  font-weight: bolder;
+}
 form {
-  display: block;
-  margin: auto;
   padding-top: 40px;
+  padding-bottom: 30px;
   margin-top: 30px;
+  border-bottom: 1px solid #f4eee8;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 30px;
+  margin-top: 30px;
+  border-top: 1px solid #f4eee8;
+  color: grey;
 }
 
 .mikaWeatherApp {
@@ -25,11 +59,35 @@ form {
   margin: auto;
   background: #fff;
   max-width: 690px;
-  font-family: "Lato", sans-serif;
   border-radius: 14px;
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.weatherSearch {
+  background: #f4f7f9;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+}
+
+.btn {
+  background-color: #114e60;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0;
+  border: none;
+  height: 50px;
+}
+.btn:hover {
+  background-color: #325288;
+  filter: drop-shadow(1px 1px 1px #050505);
+  transition: all 22ms ease-in-out;
 }
