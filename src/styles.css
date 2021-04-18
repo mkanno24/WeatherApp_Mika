@@ -12,23 +12,15 @@ li {
   font-size: 18px;
 }
 
-.tempInfo {
-  font-weight: 800;
-  color: black;
-}
-
-h1,
-h2 {
-  padding: 30px;
-  font-weight: bold;
-}
-
 h1 {
+  padding: 20px;
+  font-weight: bold;
   font-size: 40px;
 }
 
-h2 {
+.tempDisplayClass {
   font-size: 70px;
+  padding: 10px;
 }
 
 a {
@@ -90,4 +82,17 @@ footer {
   background-color: #325288;
   filter: drop-shadow(1px 1px 1px #050505);
   transition: all 22ms ease-in-out;
+}
+
+.unitMeasure {
+  font-size: 20px;
+}
+.listHumidity,
+.listWind {
+  font-weight: 800;
+  color: black;
+}
+
+.weatherMeasure {
+  text-transform: capitalize;
 }

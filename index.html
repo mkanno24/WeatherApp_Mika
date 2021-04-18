@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="mikaWeatherApp">
@@ -36,18 +37,26 @@
 
       <div class="row">
         <div class="col-6">
-          <h1>Philadelphia</h1>
+          <h1 class="cityClass" id="city">Philadelphia</h1>
           <ul>
-            <li>Sunday 11.05,</li>
-            <li>Scattered Clouds</li>
+            <li class="timeMeasure" id="dayAndTime">Sunday 11.05,</li>
+            <li class="weatherMeasure" id="conditionDescription">
+              Scattered Clouds
+            </li>
           </ul>
           <ul>
-            <li>Humidity: <strong class="tempInfo">51%</strong> ,</li>
-            <li>Wind: <strong class="tempInfo">5km/h</strong></li>
+            <li>Humidity: <strong ><span class="listHumidity" id="humidity">
+              51</strong></span>%,
+            </li>
+            <li>
+              Wind: <span class="listWind" id="windSpeed"> <strong class="tempInfo">5</strong></span>km/h
+            </li>
           </ul>
         </div>
         <div class="col-6">
-          <h2>☀️ 15°C</h2>
+          <img src="" alt="" id="temperatureIcon" class="float-left" /> ☀️
+          <span class="tempDisplayClass" id="temperatureDisplay"> 15 </span>
+          <span class="unitMeasure" id=>°C | °F</span>
         </div>
       </div>
 
