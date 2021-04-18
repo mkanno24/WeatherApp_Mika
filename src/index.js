@@ -27,13 +27,22 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#windSpeed");
   let descriptionElement = document.querySelector("#conditionDescription");
   let dateElement = document.querySelector("#dayAndTime");
+  let iconElement = document.querySelector("#temperatureIcon");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = response.data.wind.speed;
   descriptionElement.innerHTML = response.data.weather[0].description;
   dateElement.innerHTML = formatDay(response.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute(
+    "alt",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 let apiKey = "a5e503971f3cb1573fe109a966b147dd";
-let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=Singapore&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
