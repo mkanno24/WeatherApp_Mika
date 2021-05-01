@@ -86,7 +86,12 @@ footer {
 
 .unitMeasure {
   font-size: 20px;
+  float: right;
+  padding-top: 30px;
+  padding-right: 45px;
+  opacity: 0.6;
 }
+
 .listHumidity,
 .listWind {
   font-weight: 800;
@@ -95,4 +100,26 @@ footer {
 
 .weatherMeasure {
   text-transform: capitalize;
+  opacity: 0.6;
+}
+
+.weatherForecast {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.weatherForecastDay {
+  opacity: 0.6;
+}
+
+.forecastTemperature-max {
+  font-size: 14px;
+  opacity: 0.9;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.forecastTemperature-min {
+  font-size: 14px;
+  opacity: 0.6;
 }
