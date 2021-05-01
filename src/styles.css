@@ -18,11 +18,6 @@ h1 {
   font-size: 40px;
 }
 
-.tempDisplayClass {
-  font-size: 70px;
-  padding: 10px;
-}
-
 a {
   color: #325288;
 }
@@ -84,12 +79,21 @@ footer {
   transition: all 22ms ease-in-out;
 }
 
+.tempDisplayClass {
+  font-size: 70px;
+  padding: 5px;
+}
 .unitMeasure {
-  font-size: 20px;
+  font-size: 25px;
   float: right;
-  padding-top: 30px;
-  padding-right: 45px;
+  padding-top: 20px;
+  padding-right: 90px;
+  padding-left: 0px;
   opacity: 0.6;
+}
+
+#temperatureIcon {
+  padding-bottom: 40px;
 }
 
 .listHumidity,
